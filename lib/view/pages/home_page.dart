@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// Todoインスタンス一覧の取得
     List<Todo> todos = context.watch<TodoProvider>().todos;
 
     return Scaffold(

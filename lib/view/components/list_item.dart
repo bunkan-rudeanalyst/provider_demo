@@ -40,7 +40,7 @@ class ListItem extends StatelessWidget {
       child: Card(
           child: CheckboxListTile(
         onChanged: (_) {
-          context.read<TodoProvider>().updateIsDone(index);
+          context.read<TodoProvider>().updateIsDoneAtIndex(index);
         },
         value: todoItem.isDone,
         title: Text(
